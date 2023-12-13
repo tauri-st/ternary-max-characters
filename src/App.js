@@ -2,6 +2,9 @@ import React, {useState} from "react";
 import "./styles.css";
 
 export default function App() {
+
+  const [message, setMessage] = useState("");
+
   return (
     <div className="App">
       <div className="status-update">
