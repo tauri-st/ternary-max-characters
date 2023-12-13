@@ -11,7 +11,7 @@ export default function App() {
         <h1>Super Short Status!</h1>
         <p>Tell us how you are doing in 60 characters or less!</p>
         <form>
-          <textarea placeholder="What's good?" />
+          <textarea placeholder="What's good?" value={message} />
           <button type="submit">Tell the world!</button>
         </form>
       </div>
