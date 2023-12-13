@@ -4,6 +4,7 @@ import "./styles.css";
 export default function App() {
 
   const [message, setMessage] = useState("");
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const updateMessage = () => {
     setMessage();
