@@ -6,6 +6,8 @@ export default function App() {
   const [message, setMessage] = useState("");
   const [showSuccess, setShowSuccess] = useState(false);
 
+  const maxLength = 60;
+
   const updateMessage = () => {
     setMessage();
   };
