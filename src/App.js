@@ -8,8 +8,8 @@ export default function App() {
 
   const maxLength = 60;
 
-  const updateMessage = () => {
-    setMessage();
+  const updateMessage = (e) => {
+    setMessage(e.target.value);
   };
 
   return (
