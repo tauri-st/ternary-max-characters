@@ -12,7 +12,8 @@ export default function App() {
     setMessage(e.target.value);
   };
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    setShowSuccess(true);
   };
 
   return (
@@ -20,7 +21,7 @@ export default function App() {
       <div className="status-update">
         <h1>Super Short Status!</h1>
         <p>Tell us how you are doing in 60 characters or less!</p>
-        <form>
+        <form onSubmit={handleSubmit}>
           <textarea className={message.length > maxLength ? "too-long" : ""} placeholder="What's good?" value={message} onChange={updateMessage} />
           <button type="submit" disabled={message.length > maxLength}>Tell the world!</button>
         </form>
