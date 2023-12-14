@@ -18,7 +18,7 @@ export default function App() {
         <h1>Super Short Status!</h1>
         <p>Tell us how you are doing in 60 characters or less!</p>
         <form>
-          <textarea placeholder="What's good?" value={message} onChange={updateMessage} />
+          <textarea className={message.length > maxLength ? "too-long" : ""} placeholder="What's good?" value={message} onChange={updateMessage} />
           <button type="submit" disabled={message.length > maxLength}>Tell the world!</button>
         </form>
       </div>
