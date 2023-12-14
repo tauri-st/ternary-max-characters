@@ -27,7 +27,7 @@ export default function App() {
           <p>Tell us how you are doing in 60 characters or less!</p>
           <form onSubmit={handleSubmit}>
             <textarea className={message.length > maxLength ? "too-long" : ""} placeholder="What's good?" value={message} onChange={updateMessage} />
-            <button type="submit" disabled={message.length > maxLength}>Tell the world!</button>
+            <button type="submit" disabled={message.length > maxLength || message.length < 1}>Tell the world!</button>
           </form>
         </div>
       }
