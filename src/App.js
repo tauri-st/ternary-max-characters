@@ -11,6 +11,9 @@ export default function App() {
   const updateMessage = (e) => {
     setMessage(e.target.value);
   };
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  };
 
   return (
     <div className="App">
