@@ -29,6 +29,7 @@ export default function App() {
             <textarea className={message.length > maxLength ? "too-long" : ""} placeholder="What's good?" value={message} onChange={updateMessage} />
             <button type="submit" disabled={message.length > maxLength || message.length < 1}>Tell the world!</button>
           </form>
+          <p>{message.length} / {maxLength}</p>
         </div>
       }
     </div>
